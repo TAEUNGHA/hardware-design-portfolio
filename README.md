@@ -1,5 +1,17 @@
 # hardware-design-portfolio
 
+## 🛠 기술 스택
+| 구분 | 내용 |
+|---|---|
+| HDL | Verilog, SystemVerilog |
+| 설계·검증 | Synopsys Design Compiler(논리합성·STA), Verilator(Scoreboard·Coverage·Assertion), 게이트레벨 검증 |
+| FPGA / SoC | Xilinx Vivado·Vitis, Zynq-7020, Altera DE2, AXI, BRAM |
+| 레이아웃 | 트랜지스터 레벨 스키매틱·풀커스텀 레이아웃, DRC/LVS |
+| 임베디드 | STM32 (C/C++), 다중 센서·모터 제어 |
+| SW | Python(데이터 분석·ML 파이프라인), C/C++ |
+
+---
+
 ## 📂 대표 프로젝트
 
 ### 1. FPGA 기반 BNN 객체인식 하드웨어 가속기 (졸업 종합설계, 2026)
