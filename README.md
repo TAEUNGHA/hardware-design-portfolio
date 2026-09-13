@@ -1,15 +1,18 @@
 # hardware-design-portfolio
-📂 대표 프로젝트
-1. FPGA 기반 BNN 객체인식 하드웨어 가속기 (졸업 종합설계, 2026)
 
-GPU 없이 저전력 엣지 환경에서 실시간 객체 인식을 구현한 프로젝트. 사람 검출·안면 인식 담당.
+##📂 대표 프로젝트
 
-곱셈을 XNOR·비트카운트로 대체하는 BNN 가속기를 RTL로 설계, Zynq-7020 단일 SoC에 구현
-검증을 SW → PS → PS+PL → PL 단계로 나눠 PL이 PS 결과를 bit-exact 재현함을 확인
-성과: 사람 검출 정확도 94.5% / 추론 30초 → 1.394초(약 21배) / 자원 LUT 79%·BRAM 74%·DSP 33%
-학습 데이터가 없어 촬영 영상에서 프레임을 추출·YOLO 자동 라벨링해 확보, PCAM 도메인 적응 재학습으로 실환경 정확도 개선
-기술: SystemVerilog/Verilog, Vivado·Vitis, Zynq-7020, Python(학습 파이프라인)
-2. RISC-V 8×8 GEMM 프로세서 & ASIC 합성 (2025)
+###1. FPGA 기반 BNN 객체인식 하드웨어 가속기 (졸업 종합설계, 2026)
+
+###GPU 없이 저전력 엣지 환경에서 실시간 객체 인식을 구현한 프로젝트. 사람 검출·안면 인식 담당.
+
+###곱셈을 XNOR·비트카운트로 대체하는 BNN 가속기를 RTL로 설계, Zynq-7020 단일 SoC에 구현
+###검증을 SW → PS → PS+PL → PL 단계로 나눠 PL이 PS 결과를 bit-exact 재현함을 확인
+###성과: 사람 검출 정확도 94.5% / 추론 30초 → 1.394초(약 21배) / 자원 LUT 79%·BRAM 74%·DSP 33%
+###학습 데이터가 없어 촬영 영상에서 프레임을 추출·YOLO 자동 라벨링해 확보, PCAM 도메인 적응 재학습으로 실환경 정확도 개선
+###기술: SystemVerilog/Verilog, Vivado·Vitis, Zynq-7020, Python(학습 파이프라인)
+
+###2. RISC-V 8×8 GEMM 프로세서 & ASIC 합성 (2025)
 
 파이프라인 프로세서 설계부터 ASIC 합성·타이밍 검증까지 완결.
 
