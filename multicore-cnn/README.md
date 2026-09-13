@@ -17,7 +17,4 @@ CNN convolution을 대상 연산으로 구현한 프로젝트입니다. convolut
   - `core_pc.sv` · `core_ram.sv` · `core_decoder.sv` · `core_mult.sv` · `core_adder.sv` — 코어 구성 모듈
 - `tb/core_3by3_tb.sv` — 시스템 검증 테스트벤치
 
-> 소스는 프로젝트 최종 보고서에 포함된 코드를 모듈별로 추출·정리한 것입니다(PDF 특수문자 제거).
-> 시뮬레이터에서 한 번 컴파일 확인 후 사용을 권장합니다.
-
 **Tools:** SystemVerilog · Verilator
