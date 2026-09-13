@@ -1,0 +1,171 @@
+dc_shell> report_timing
+
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : RISCVSINGLE
+Version: W-2024.09-SP3
+Date   : Wed Dec 10 18:39:06 2025
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: ss0p95v125c   Library: saed32hvt_ss0p95v125c
+Wire Load Model Mode: enclosed
+
+  Startpoint: DP/pr2/alusrc_e_reg
+              (rising edge-triggered flip-flop clocked by CLOCK)
+  Endpoint: DP/r_PC_reg[0]
+            (rising edge-triggered flip-flop clocked by CLOCK)
+  Path Group: CLOCK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  RISCVSINGLE        35000                 saed32hvt_ss0p95v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock CLOCK (rise edge)                                 0.00       0.00
+  clock network delay (ideal)                             1.00       1.00
+  DP/pr2/alusrc_e_reg/CLK (DFFARX1_HVT)                   0.00 #     1.00 r
+  DP/pr2/alusrc_e_reg/QN (DFFARX1_HVT)                    0.33       1.33 r
+  U203/Y (INVX2_HVT)                                      0.04       1.37 f
+  U147/Y (NBUFFX16_HVT)                                   0.08       1.45 f
+  U1014/Y (MUX21X2_HVT)                                   0.20       1.65 r
+  U1015/Y (XNOR2X1_HVT)                                   0.21       1.85 r
+  U143/Y (OAI22X1_HVT)                                    0.14       2.00 f
+  U1088/S (FADDX1_HVT)                                    0.19       2.19 r
+  U1133/S (FADDX1_HVT)                                    0.22       2.41 f
+  U1148/S (FADDX1_HVT)                                    0.20       2.61 r
+  U1348/S (FADDX1_HVT)                                    0.21       2.82 f
+  U424/Y (OR2X1_HVT)                                      0.08       2.90 f
+  U403/Y (INVX0_HVT)                                      0.03       2.93 r
+  U1359/Y (OA21X1_HVT)                                    0.09       3.02 r
+  U145/Y (OAI21X1_HVT)                                    0.14       3.17 f
+  U144/Y (AO21X1_HVT)                                     0.09       3.26 f
+  U1548/Y (AOI21X1_HVT)                                   0.14       3.41 r
+  U1550/Y (XOR2X2_HVT)                                    0.13       3.54 f
+  U1551/Y (AOI22X1_HVT)                                   0.10       3.63 r
+  U1555/Y (NAND3X0_HVT)                                   0.08       3.71 f
+  U347/Y (INVX0_HVT)                                      0.05       3.76 r
+  U881/Y (NAND4X0_HVT)                                    0.11       3.87 f
+  U344/Y (INVX0_HVT)                                      0.05       3.92 r
+  U845/Y (NAND4X0_HVT)                                    0.11       4.03 f
+  U848/Y (OA21X1_HVT)                                     0.14       4.17 f
+  U233/Y (INVX4_HVT)                                      0.05       4.22 r
+  U343/Y (INVX8_HVT)                                      0.05       4.27 f
+  U225/Y (INVX4_HVT)                                      0.06       4.32 r
+  U2329/Y (AO21X1_HVT)                                    0.11       4.44 r
+  DP/r_PC_reg[0]/D (DFFARX1_HVT)                          0.00       4.44 r
+  data arrival time                                                  4.44
+
+  clock CLOCK (rise edge)                                 4.00       4.00
+  clock network delay (ideal)                             1.00       5.00
+  clock uncertainty                                      -0.50       4.50
+  DP/r_PC_reg[0]/CLK (DFFARX1_HVT)                        0.00       4.50 r
+  library setup time                                     -0.06       4.44
+  data required time                                                 4.44
+  --------------------------------------------------------------------------
+  data required time                                                 4.44
+  data arrival time                                                 -4.44
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+1
+dc_shell> report_area
+
+****************************************
+Report : area
+Design : RISCVSINGLE
+Version: W-2024.09-SP3
+Date   : Wed Dec 10 18:39:17 2025
+****************************************
+
+Library(s) Used:
+
+    saed32hvt_ss0p95v125c (File: /home/dice25/dice/lib/db/saed32hvt_ss0p95v125c.db)
+
+Number of ports:                          163
+Number of nets:                          7037
+Number of cells:                         6645
+Number of combinational cells:           5157
+Number of sequential cells:              1488
+Number of macros/black boxes:               0
+Number of buf/inv:                        524
+Number of references:                      52
+
+Combinational area:              14555.081004
+Buf/Inv area:                     1664.643239
+Noncombinational area:           10090.533653
+Macro/Black Box area:                0.000000
+Net Interconnect area:           10218.136110
+
+Total cell area:                 24645.614658
+Total area:                      34863.750768
+1
+dc_shell> report_power
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Warning: Design has unannotated primary inputs. (PWR-414)
+Warning: Design has unannotated sequential cell outputs. (PWR-415)
+
+****************************************
+Report : power
+        -analysis_effort low
+Design : RISCVSINGLE
+Version: W-2024.09-SP3
+Date   : Wed Dec 10 18:39:26 2025
+****************************************
+
+
+Library(s) Used:
+
+    saed32hvt_ss0p95v125c (File: /home/dice25/dice/lib/db/saed32hvt_ss0p95v125c.db)
+
+
+Operating Conditions: ss0p95v125c   Library: saed32hvt_ss0p95v125c
+Wire Load Model Mode: enclosed
+
+Design        Wire Load Model            Library
+------------------------------------------------
+RISCVSINGLE            35000             saed32hvt_ss0p95v125c
+
+
+Global Operating Voltage = 0.95
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000ff
+    Time Units = 1ns
+    Dynamic Power Units = 1uW    (derived from V,C,T units)
+    Leakage Power Units = 1pW
+
+
+Attributes
+----------
+i - Including register clock pin internal power
+
+
+  Cell Internal Power  =   2.2006 mW   (98%)
+  Net Switching Power  =  47.8503 uW    (2%)
+                         ---------
+Total Dynamic Power    =   2.2485 mW  (100%)
+
+Cell Leakage Power     = 436.8650 uW
+
+
+                 Internal         Switching           Leakage            Total
+Power Group      Power            Power               Power              Power   (   %    )  Attrs
+--------------------------------------------------------------------------------------------------
+io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+  (   0.00%)
+  (  80.58%)  i
+  (   7.58%)
+  (   0.00%)
+  (  11.84%)
+--------------------------------------------------------------------------------------------------
+Total          2.2006e+03 uW        47.8501 uW     4.3686e+08 pW     2.6853e+03 uW
+1
