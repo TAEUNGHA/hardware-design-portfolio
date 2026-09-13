@@ -1,0 +1,50 @@
+==== ELEVATOR FSM TEST REPORT ====
+===== 1-1) 5UP 15UP 31UP =====
+CASE 1 STEP 1 : PASS (floor=5)
+CASE 1 STEP 2 : PASS (floor=15)
+CASE 1 STEP 3 : PASS (floor=31)
+===== 1-2) 32DN 17DN 1DN =====
+CASE 1 STEP 4 : PASS (floor=32)
+CASE 1 STEP 5 : PASS (floor=17)
+CASE 1 STEP 6 : PASS (floor=1)
+===== 2-1) 4UP 10UP 8UP =====
+CASE 2 STEP 1 : PASS (floor=4)
+CASE 2 STEP 2 : PASS (floor=8)
+CASE 2 STEP 3 : PASS (floor=10)
+===== 2-2) 9DN 1DN 4DN =====
+CASE 2 STEP 4 : PASS (floor=9)
+CASE 2 STEP 5 : PASS (floor=4)
+CASE 2 STEP 6 : PASS (floor=1)
+===== 3-1) 3UP 8UP 2DN =====
+CASE 3 STEP 1 : PASS (floor=3)
+CASE 3 STEP 2 : PASS (floor=8)
+CASE 3 STEP 3 : PASS (floor=2)
+===== 3-2) 4DN 8DN 2UP =====
+CASE 3 STEP 4 : PASS (floor=4)
+CASE 3 STEP 5 : PASS (floor=8)
+CASE 3 STEP 6 : PASS (floor=2)
+===== 4-1) 9UP 3DN 12UP =====
+CASE 4 STEP 1 : PASS (floor=9)
+CASE 4 STEP 2 : PASS (floor=12)
+CASE 4 STEP 3 : PASS (floor=3)
+===== 4-2) 10DN 2UP 3DN =====
+CASE 4 STEP 4 : PASS (floor=10)
+CASE 4 STEP 5 : PASS (floor=3)
+CASE 4 STEP 6 : PASS (floor=2)
+===== 5) 3UP 10DN 10UP 15UP =====
+CASE 5 STEP 1 : PASS (floor=3)
+CASE 5 STEP 2 : PASS (floor=10)
+CASE 5 STEP 3 : PASS (floor=15)
+CASE 5 STEP 4 : PASS (floor=10)
+===== 6) BTN OPEN/CLOSE =====
+CASE 6 STEP 1 : PASS (floor=5)
+CASE 6 : PASS (OPEN)
+CASE 6 STEP 1 : PASS (floor=4)
+CASE 6 : PASS (CLOSE)
+===== 7) EMG TEST =====
+CASE 7 STEP 1 : PASS (floor=20)
+CASE 7 : PASS (EMG)
+===================================
+TOTAL PASS = 31
+TOTAL FAIL = 0
+===================================
